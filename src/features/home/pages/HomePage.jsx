@@ -1,9 +1,9 @@
 import React from 'react'
 import { useLocalStorage } from '../../../hooks/useLocalStorage'
-import Navbar from '../../../components/Navbar'
 import HomeFeatures from '../components/HomeFeatures'
 import HomeMoviesSection from '../components/HomeMoviesSection'
 import HomeSessionsSection from '../components/HomeSessionsSection'
+import Navbar from '../../../components/Navbar'
 
 export default function HomePage() {
   const [filmes] = useLocalStorage('filmes', [])
