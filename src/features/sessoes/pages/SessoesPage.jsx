@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import SessaoForm from '../components/SessaoForm'
 import SessoesTable from '../components/SessoesTable'
+import Navbar from '../../../components/Navbar'
 
 export default function SessoesPage() {
   const [sessoes, setSessoes] = useState(() =>

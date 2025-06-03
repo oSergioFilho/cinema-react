@@ -2,7 +2,9 @@ import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import HomePage from '../features/home/pages/HomePage'
 import FilmesPage from '../features/filmes/pages/FilmesPage'
-// ...importe outras páginas se quiser
+import SalasPage from '../features/salas/pages/SalasPage'
+import SessoesPage from '../features/sessoes/pages/SessoesPage'        
+import IngressosPage from '../features/ingressos/pages/IngressosPage'  
 
 export default function AppRoutes() {
   return (
@@ -12,8 +14,6 @@ export default function AppRoutes() {
       <Route path="/salas" element={<SalasPage />} />
       <Route path="/sessoes" element={<SessoesPage />} />
       <Route path="/ingressos" element={<IngressosPage />} />
-
-
       {/* Outras rotas */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
